@@ -30,7 +30,7 @@ jobs:
         echo "Hola mundo"
      - name: "Variables"
        run: |
-          echo "platform: $platform"
-          echo "region: $region"
-          echo "account: $account"
+          echo " la platform: ${{env.platform}}"
+          echo "region: ${{env.region}}"
+          echo "account: ${{env.account}}"
     
