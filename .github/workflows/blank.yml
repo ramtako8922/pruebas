@@ -29,6 +29,7 @@ jobs:
        run:
         echo "Hola mundo"
      - name: "Variables"
+       if: ${{env.platform=='azure'}}
        run: |
           echo " la platform: ${{env.platform}}"
           echo "region: ${{env.region}}"
