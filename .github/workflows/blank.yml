@@ -34,4 +34,8 @@ jobs:
           echo " la platform: ${{env.platform}}"
           echo "region: ${{env.region}}"
           echo "account: ${{env.account}}"
+     - name: "Evento"
+       run: | 
+           echo "Evento: ${{toJson(github.event)}}"
+           echo "nombre evento: ${{github.event_name}}"
     
