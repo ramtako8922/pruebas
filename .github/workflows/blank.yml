@@ -49,5 +49,8 @@ jobs:
         if: ${{env.password !='' && env.username!=''}}
         run: |
          echo " si hay variables secretas"
+     - name: "mostrando variables"
+       run: |
+          echo "esta es una variable ${{vars.VERSION}}"
 
     
