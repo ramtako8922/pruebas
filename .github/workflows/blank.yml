@@ -41,4 +41,8 @@ jobs:
            echo "Evento: ${{toJson(github.event)}}"
            echo "nombre evento: ${{github.event_name}}" 
            echo "actor:$GITHUB_ACTOR "
+     - name: "Mostrar secrets"
+       run: | 
+            echo "este es el usuario  ${{env.username}}"
+            echo "esta es la clave  ${{env.password}}"
     
