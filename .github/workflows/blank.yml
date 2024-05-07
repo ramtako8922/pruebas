@@ -45,4 +45,9 @@ jobs:
        run: | 
             echo "este es el usuario  ${{env.username}}"
             echo "esta es la clave  ${{env.password}}"
+     -  name: "mostrando credenciales si existen"
+        if: ${{env.password !='' && env.username!=''}}
+        run: |
+         echo " si hay variables secretas"
+
     
